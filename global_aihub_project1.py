@@ -59,4 +59,14 @@ print("Data in dictionary format: ",my_dict)
 df = pd.DataFrame(my_dict)
 print(df)
 
+exam_result = []
+for q in range(len(df["grade"])):
+  if int(df["grade"][q]) > 50:
+    exam_result.append("PASSED")
+  else:
+    exam_result.append("FAILED")
+print(exam_result,type(exam_result))
+
+df["pass/fail"] = exam_result
+
 df.to_csv("MY_FIRST_CSV_FILE.csv")

@@ -1,0 +1,4 @@
+,name,surname,school_number,grade,pass/fail
+0,batuhan,kağızmanlı,3731,96,PASSED
+1,hilal,kağızmanlı,9999,100,PASSED
+2,rasim,yazıcı,9876,45,FAILED
